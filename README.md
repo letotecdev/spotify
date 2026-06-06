@@ -4,13 +4,11 @@ Este projeto é um clone da interface do Spotify, desenvolvido com foco em repli
 
 ## Preview
 
-<!-- Adicione aqui os prints do seu projeto. Por exemplo: -->
 <p>
-  <img src="./caminho/para/sua/imagem-desktop.png" alt="Preview da Interface Desktop" width="100%" />
+  <img src="Captura de Tela 2026-06-06 às 17.01.52.png" alt="Preview da Interface do Spotify - Tela 1" width="100%" />
 </p>
 <p>
-  <img src="./caminho/para/sua/imagem-mobile.png" alt="Preview da Interface Mobile" width="49%" />
-  <img src="./caminho/para/sua/imagem-player.png" alt="Preview do Player de Música" width="49%" />
+  <img src="Captura de Tela 2026-06-06 às 17.02.02.png" alt="Preview da Interface do Spotify - Tela 2" width="100%" />
 </p>
 
 ## Tecnologias Utilizadas
@@ -62,21 +60,3 @@ O projeto está organizado da seguinte forma:
 *   `scripts.js`: Contém o código JavaScript para interatividade.
 *   `img/`: Diretório para armazenar todas as imagens e ícones utilizados na interface.
 
-## Como Contribuir
-
-Contribuições são bem-vindas! Se você deseja aprimorar este projeto, por favor, siga os passos:
-
-1.  Faça um fork do repositório.
-2.  Crie uma nova branch para sua feature (`git checkout -b feature/sua-feature`).
-3.  Realize suas alterações e faça o commit (`git commit -m 'Adiciona nova feature'`).
-4.  Envie para a branch original (`git push origin feature/sua-feature`).
-5.  Abra um Pull Request detalhando suas mudanças.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## Autor
-
-*   **[Seu Nome/letotecdev]** - [GitHub](https://github.com/letotecdev ) | [LinkedIn](https://linkedin.com/in/seu-perfil ) <!-- Adicione seus links -->
-<img width="1512" height="825" alt="Captura de Tela 2026-06-06 às 17 02 02" src="https://github.com/user-attachments/assets/5a86e2f5-3fb1-48d2-b042-584be75663d2" />
