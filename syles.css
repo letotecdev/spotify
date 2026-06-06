@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif; 
+}
+
+
+
+body {
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px 15px;
+    
+}
+
+.search-bar {
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 15px 12px;
+    border-radius: 20px;
+    width: 30%;
+    text-overflow: ellipsis;
+    -webkit-transition: all .22s ease-in;
+    transition: all .22s ease-in;
+
+}
+.search-bar:hover{
+    background-color: #2e2e2e;
+}
+.search-bar input {
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    width: 100%;
+    margin-left: 10px;
+    outline: none;
+}
+
+.button-Entrar {
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    padding: 15px 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-Entrar:hover{
+    transform: scale(1.1); /* Aumenta o botão 10% quando o mouse passa */
+}
+
+.button-Inscrever-se {
+    background-color: transparent;
+    color: #B7B3B6;
+    border-radius: 20px;
+    border: none;
+    padding: 15px 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button-Inscrever-se:hover{
+    transform: scale(1.1); /* Aumenta o botão 10% quando o mouse passa */
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    gap: 8px;
+    padding: 5px 10px;
+    
+}
+
+.sidebar {
+    width: 420px;
+    background-color: #121212;
+    padding: 10px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.nav-logo  i {
+    font-size: 35px;
+    margin-left: 15px;
+}
+
+.nav-library {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.nav-library div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-library i, .nav-library p {
+    color: #B7B3B6;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-playlist, .nav-podcast {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #242424;
+    padding: 18px 20px;
+    border-radius: 8px;
+    height: 15%;
+    margin: 8px 0;
+    gap: 15px;
+   
+    
+}
+
+
+
+.nav-playlist button, .nav-podcast button {
+    margin-top: 5px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+   
+}
+
+
+.nav-playlist button:hover, .nav-podcast button:hover{
+    transform: scale(1.1); /* Aumenta o botão 10% quando o mouse passa */
+} 
+
+.nav-playlist p, .nav-podcast p {
+    font-size: 12px;
+}
+
+.nav-footer {
+    display: flex;
+    margin-top: 15%;
+    flex-wrap: wrap;
+
+}
+
+
+.nav-footer a {
+    color: #a7a7a7;
+    text-decoration: none;
+    font-size: 12px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+
+
+}
+
+.nav-lang-button {
+    align-self:flex-start;
+    background-color: transparent;
+    border: 1px solid #a7a7a7;
+    color: #fff;
+    padding: 8px 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: left;
+}
+.nav-lang-button:hover{
+    border: 1px solid #ffffff;
+    transform: scale(1.1); /* Aumenta o botão 10% quando o mouse passa */
+}
+
+
+main {
+    width: 420px;
+    background-color: #181818;
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+    border-radius: 5px;
+    
+    
+}
+
+.artists-grid, .albums-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    margin-bottom: 40px;
+}
+
+.artist-card, .albums-card {
+    background-color: #181818;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.artist-card:hover, .albums-card:hover{
+    background-color: #282828;
+}
+
+.artist-card img {
+    width: 100%;
+    max-height: 70%;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+.albums-card img{
+    width: 100%;
+    border-radius: 6px;
+    max-height: 70%;
+    margin-bottom: 16px;
+}
+
+.artist-card h3, .albums-card h3 {
+    font-size: 18px;
+    text-align: left;
+}
+
+.artist-card p, .albums-card p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #B7B3B6;
+    text-align: left;
+}
+
+.content h2 {
+    margin-bottom: 10px;
+}
+
+.banner {
+    background-image: -webkit-gradient(linear, left top, right top, from(#af2896), to(#509bf5));
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner div {
+    margin-left:15px;
+}
+.banner h2 {
+    font-size: 0.875rem;
+}
+
+.banner p {
+    font-size: 1rem;
+}
+
+footer {
+    
+    display: flex;
+    min-width: 620px;
+    flex-direction: column;
+    height: auto;
+    user-select: none;
+    margin-top: 10px;
+    position: relative;
+    z-index: 10;
+    
+    /*
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10; /* footer fixo mesmo ao rolar pagina */
+    
+}
+
+
+footer button{
+    margin-right: 15px;
+    border-radius: 20px;
+    color: #000;
+    border: none;
+    padding: 8px 32px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 150px; /* Largura fixa */
+    height: 45px; /* Altura fixa */
+    min-width: 200px; /* Largura mínima */ /* vai garantir que o texto do botao não quebre */
+}
+
+footer button:hover{
+    transform: scale(1.1); /* Aumenta o botão 10% quando o mouse passa */
+}
+
+main::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    
+}
+
+
+main::-webkit-scrollbar-track {
+    background: #121212; /* Cor do fundo da trilha da barra */
+    border-radius: 10px;
+    
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #8e8a8d; /* Cor do polegar da rolagem */   
+    
+}
